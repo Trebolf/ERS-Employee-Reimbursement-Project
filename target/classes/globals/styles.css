@@ -1,0 +1,31 @@
+body {
+    font-family: 'Fredoka', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    width: 1920px;
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: #864892;
+    box-shadow: 0 0 10px #864892;
+}
+
+textarea:focus { 
+    outline: none !important;
+    border-color: #864892;
+    box-shadow: 0 0 10px #864892;
+}
+
+.footer {
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0, 0, 0, 0.7));
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    color: rgb(173, 173, 173);
+}

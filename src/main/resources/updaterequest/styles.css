@@ -1,0 +1,250 @@
+input {
+    text-align: right;
+}
+
+.container {
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:0px;
+}
+
+.card-img-background {
+    position: relative;
+    width: 1920px;
+    height: 1150px;
+}
+
+.card-container {
+    position: relative;
+    margin-top: 60px;
+    background-image: linear-gradient( rgba(202, 175, 139, 0.3), rgb(209, 162, 177));
+    height: 340px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+#card-container-past {
+    position: relative;
+    top: 30px;
+    margin-top: 60px;
+    background-image: linear-gradient( rgba(202, 175, 139, 0.3), rgb(209, 162, 177));
+    height: 160px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card-img-top {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.input-title {
+    font-size: 1.4em;
+}
+
+.select-container {
+    width: 100px;
+}
+
+#select-box {
+    font-size: 18px;
+    width: 100%;
+    height: 38px;
+    outline: none !important;
+    border-color: #c9c5ce;
+    border-radius: 4px;
+    color:rgba(0, 0, 0, 0.7)
+}
+
+#select-box2 {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    outline: none !important;
+    border-color: #c9c5ce;
+    border-radius: 4px;
+    color:rgba(0, 0, 0, 0.7)
+}
+
+#message {
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    font-size: 24px;
+}
+
+#message2 {
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    font-size: 18px;
+}
+
+#select-box3 {
+    width: 100%;
+    height: 38px;
+    outline: none !important;
+    border-color: #c9c5ce;
+    border-radius: 4px;
+    color:rgba(0, 0, 0, 0.7)
+}
+
+#select-box4 {
+    text-align: center;
+    width: 100%;
+    height: 38px;
+    outline: none !important;
+    border-color: #c9c5ce;
+    border-radius: 4px;
+    color:rgba(0, 0, 0, 0.7)
+}
+
+.type-dropdown {
+    width: 100%;
+}
+
+.card-foot {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 25px;
+    width: 100%;
+}
+
+#submit-button {
+    font-size: 20px;
+    bottom: 20px;
+    right: 13px;
+    background-color: #555585;
+    border-radius: 4px;
+    height: 38px;
+    width: 120px;
+    color: white;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+#submit-button:hover {
+    background-color: #434379;
+}
+
+#submit-button:active {
+    transform: scale(.95);
+    box-shadow: none;
+}
+
+.card-foot2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submit-button2 {
+    font-size: 20px;
+    bottom: 20px;
+    right: 13px;
+    background-color: #765d94;
+    border-radius: 4px;
+    height: 38px;
+    width: 120px;
+    color: white;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+#submit-button2:hover {
+    background-color: #664d85;
+}
+
+#submit-button2:active {
+    transform: scale(.95);
+    box-shadow: none;
+}
+
+.grow {
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    height: 49px;
+    width: 120px;
+    margin: 0px;
+    top: 8px;
+    float: left;
+    position: relative;
+    transition: height 0.8s;
+    -webkit-transition: height 0.8s;
+    text-align: center;
+    overflow: hidden;
+}
+
+.grow:hover {
+    height: 110px;
+    cursor: pointer;
+}
+
+.grow:active {
+    transform: scale(.95);
+}
+
+.return {
+    color: white;
+}
+
+.return-expand {
+    color: white;
+}
+
+.show-past {
+    background-color: #7a486e;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    height: 49px;
+    width: 120px;
+    margin: 0px;
+    top: 8px;
+    float: right;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.show-past:hover {
+    background-color: #5f3355;
+    cursor: pointer;
+}
+
+.show-past:active {
+    transform: scale(.95);
+}
+
+.history {
+    position: relative;
+    bottom: 2px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+background: rgb(238, 241, 205); 
+border-radius: 6px;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+background: #555585;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #434379;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../globals/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div id="welcome"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://localhost:4242/createrequest/">Create a request</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="delete-button" onclick="myFunction2()">Delete a request</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="logout-button" onclick="logout()">Logout</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                <h4 class="title-bar">ILLUMA</h4>
+                <input class="form-control me-2" type="search" placeholder="Search by desc." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>
+        <img src="../images/guweizupdate1.png" class="card-img-background" alt="background image">
+        <div class="spacing">
+            <div class="card-container">
+                <img src="../images/guweiz2 title.png" class="card-img-top" alt="title bar image">
+                <div class="card-body">
+                    <p class="card-text">View current and past requests.</p>
+                </div>
+                <div class="list-container">
+                    <div class="list-title">Live Requests:</div>
+                    <ul class="list-group">
+                        <!-- <li class="list-group-item">Reimbursement ID: 1 || PENDING</li>
+                        <li class="list-group-item">Reimbursement ID: 2 || PENDING</li>
+                        <li class="list-group-item">Reimbursement ID: 3 || PENDING</li>
+                        <li class="list-group-item">Reimbursement ID: 4 || PENDING</li>
+                        <li class="list-group-item">Reimbursement ID: 5 || PENDING</li>
+                        <li class="list-group-item">Reimbursement ID: 6 || PENDING</li> -->
+                    </ul>
+                </div>
+                <button class="button-past" onclick="myFunction()">View past requests</button>
+                <br>
+                <!-- <div class="list-container">
+                    <h4 class="list-title">Past Requests:</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item disabled">Reimbursement ID: 1 || Amount || Type || Desc. || STATUS</li>
+                        <li class="list-group-item disabled">Reimbursement ID: 2 || Amount || Type || Desc. || STATUS</li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="list-delete-item" style="display: none">
+        <ul id="list-delete-group">
+            <!-- <li id="list-item"><button id="delete-item" aria-setsize="4">X</button></li>
+            <li id="list-item"><button id="delete-item" aria-setsize="4">X</button></li>
+            <li id="list-item"><button id="delete-item" aria-setsize="4">X</button></li>
+            <li id="list-item"><button id="delete-item" aria-setsize="4">X</button></li>
+            <li id="list-item"><button id="delete-item" aria-setsize="4">X</button></li>
+            <li id="list-item"><button id="delete-item" aria-setsize="4">X</button></li> -->
+        </ul>
+    </div>
+
+    <div id="list-past" style="display: none">
+        <div class="list-container2">
+            <img src="../images/guweiz2-bar2.png" class="card-img-top" alt="title bar image">
+            <div class="list-title2">Past Requests:</div>
+            <ul class="list-group2">
+                <!-- <li class="list-group-item disabled">Reimbursement ID: 1 || Amount || Type || Desc. || STATUS</li>
+                <li class="list-group-item disabled">Reimbursement ID: 2 || Amount || Type || Desc. || STATUS</li> -->
+            </ul>
+        </div>
+    </div>
+    
+    <!-- <div id="list-past" style="display: none">
+        <div class="list-container2">
+            <img src="guweiz2-bar2.png" class="card-img-top" alt="title bar image">
+            <div class="list-title2">Past Requests:</div>
+            <ul class="list-group">
+                <li class="list-group-item disabled">Reimbursement ID: 1 || Amount || Type || Desc. || STATUS</li>
+                <li class="list-group-item disabled">Reimbursement ID: 2 || Amount || Type || Desc. || STATUS</li>
+            </ul>
+        </div>
+    </div> -->
+
+    <footer class="footer text-lg-start">
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a class="text-light">Illuma.com</a>
+            <p>All rights reserved jokingly for this project. No part of this mock website is monetized whatsoever.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./personallist.js"></script>
+    <script src="../globals/globals.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+.navbar-brand {
+    margin-left: 18px;
+}
+
+.welcome {
+    color: white;
+    font-size: 20px;
+}
+
+.name {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.title-bar {
+    color: white;
+    margin-top: 8px;
+    margin-right: 30px;
+    font-family: 'Merienda', cursive;
+}
+
+.delete-button {
+    margin-top: 8px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(179, 179, 179);
+}
+
+.logout-button {
+    margin-top: 8px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(179, 179, 179);
+}
+
+.card-img-background {
+    position: relative;
+    width: 1920px;
+    height: 1300px;
+}
+
+.spacing {
+    position:absolute;
+    top: 60px;
+    left: 0px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1800px;
+}
+
+.card-container {
+    position: relative;
+    background-color: #d8d8cb;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    width: 620px;
+    margin: 40px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.button-past {
+    position: absolute;
+    /* top: 600px;
+    left: 506px; */
+    bottom: -50px;
+    right: -3px;
+    background-color: #6d6659;
+    border-radius: 12px;
+    width: 170px;
+    margin: 3px;
+    color: white;
+    border: none;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+}
+
+.button-past:hover {
+    background-color: #4d463a;
+}
+
+.button-past:active {
+    transform: scale(.95);
+    box-shadow: none;
+}
+
+.card-img-top {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    height: 42px;
+}
+
+.list-title {
+    margin-left: 16px;
+    font-size: 25px;
+}
+
+.list-group {
+    background-color: #6e7059;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.list-group2 {
+    background-color: #6e7059;
+    padding: 3px;
+    border-radius: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.list-group-item {
+    background-color: #d8d8cb;
+    margin: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    list-style-type: none;
+}
+
+.list-group-item:hover {
+    background-color: #ccccbd;
+}
+
+.list-group-item:disabled {
+    list-style-type: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    background-color: #ccccbd;
+}
+
+#list-delete-item {
+    position: absolute;
+    list-style-type: none;
+    top: 257px;
+    left: 600px;
+}
+
+.list-item {
+    list-style-type: none;
+}
+
+#delete-item {
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 7px;
+    background-color: #b15949;
+    color: #d8d8cb;
+    height: 42px;
+    width: 42px;
+    border-radius: 4px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    list-style-type: none;
+}
+
+#list-past {
+    position: absolute;
+    top: 80px;
+    left: 680px;
+    display: none;
+}
+
+.list-container2 {
+    background-color: #d8d8cb;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    width: 620px;
+    margin: 40px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.list-title2 {
+    margin-top: 16px;
+    margin-left: 16px;
+    font-size: 25px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+background: #d8d8cb;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+background: #6e7059;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #5c5e46;
+}
